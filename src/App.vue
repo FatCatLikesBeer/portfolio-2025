@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import projects from "./data/projects.ts";
 import ContentCard from "./components/ContentCard.vue";
-import type Projects from "./data/projects.ts";
 </script>
 
 <template>
-  <div v-for="project in projects">
+  <div v-for="project in projects.reverse()">
     <ContentCard :project="project" />
   </div>
 </template>

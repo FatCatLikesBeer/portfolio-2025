@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import type Projects from "./data/projects.ts";
-defineProps<{ project: Projects[] }>();
+import type { Project } from "../data/projects.ts";
+defineProps<{ project: Project }>();
 </script>
 
 <template>
