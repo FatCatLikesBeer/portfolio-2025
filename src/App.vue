@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
 import projects from "./data/projects.ts";
+import ContentCard from "./components/ContentCard.vue";
+import type Projects from "./data/projects.ts";
 </script>
 
 <template>
-  <div>
+  <div v-for="project in projects">
+    <ContentCard :project="project" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
