@@ -9,5 +9,4 @@ import ContentCard from "./components/ContentCard.vue";
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
