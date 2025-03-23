@@ -1,5 +1,6 @@
 const projects: Project[] = [
   {
+    id: "app",
     name: "App",
     description: "Another Platform for Posting",
     url: "https://app.billlaaayyy.dev",
@@ -9,7 +10,8 @@ const projects: Project[] = [
     technologies: ["React", "TypeScript", "Hono", "S3", "Cloudflare R2", "SQLite", "Turso", "SSR", "Open Graph", "Twitter Cards"],
   },
   {
-    name: "billy-blog",
+    id: "billy-blog",
+    name: "Billy-Blog",
     description: "It's my blog",
     url: "https://billy-blog.pockethost.io/",
     image: ["", "", ""],
@@ -18,6 +20,7 @@ const projects: Project[] = [
     technologies: ["React", "PocketBase", "TypeScript"],
   },
   {
+    id: "sound-lab",
     name: "Sound Lab",
     description: "Horrible Noise Maker. Best used on mobile. CAUTION: LOUD!!!",
     url: "https://noise-maker.fly.dev/",
@@ -27,6 +30,7 @@ const projects: Project[] = [
     technologies: ["Web Audio API", "React", "TypeScript", "DOM Manipulation"],
   },
   {
+    id: "blue-bubbles",
     name: "Blue Bubbles",
     description: "Messaging App: Blue Bubbles for Everyone!",
     url: "https://bluebubbles.fly.dev/",
@@ -36,6 +40,7 @@ const projects: Project[] = [
     technologies: ["Socket.io", "No-React", "MongoDB", "Express", "TTD", "Jest", "SuperTest"],
   },
   {
+    id: "letter-finder",
     name: "Letter Finder",
     description: "Where's Waldo, but with letter characters",
     url: "https://letter-finder.fly.dev/",
@@ -45,6 +50,7 @@ const projects: Project[] = [
     technologies: ["React", "MongoDB"],
   },
   {
+    id: "bored-programmer",
     name: "Bored Programmer",
     description: "Like the Bored API (RIP) but for programmers",
     url: "https://bored-programmer-api.fly.dev/",
@@ -54,6 +60,7 @@ const projects: Project[] = [
     technologies: ["NodeJS", "MongoDB", "Express", "EJS"],
   },
   {
+    id: "passwordhawk",
     name: "Password Hawk",
     description: "A passcode/passphrase generator",
     url: "https://password-hawk.fly.dev/",
@@ -65,6 +72,7 @@ const projects: Project[] = [
 ];
 
 export interface Project {
+  id: string;
   name: string;
   description: string;
   url: string;
@@ -74,4 +82,5 @@ export interface Project {
   technologies: string[];
 }
 
+projects.reverse();
 export default projects;
