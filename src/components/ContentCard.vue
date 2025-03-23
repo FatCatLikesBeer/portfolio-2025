@@ -5,9 +5,9 @@ defineProps<{ project: Project }>();
 </script>
 
 <template>
-  <div>
+  <div class="border-amber-100 border-3 rounded-xl p-4 m-2">
     <h1 class="underline">{{ project.name }}</h1>
     <p class="sub-title">{{ project.description }}</p>
-    <GitHub :url="project.github" />
+    <GitHub :url="project.github" :size="28" />
   </div>
 </template>
