@@ -9,7 +9,7 @@ import type { Project } from "../data/projects.ts";
 const props = defineProps<{ project: Project }>();
 const imageIndex = ref(1);
 
-const imageLocation = `/screenshots/${props.project.id}/`;
+const imageLocation = `/screenshots/${props.project.id}`;
 const imageCatlog = Array.from({ length: 3 }, (_, i) => `${imageLocation}/${i + 1}.png`);
 imageCatlog.forEach((path) => { new Image().src = path });
 
