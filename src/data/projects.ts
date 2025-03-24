@@ -15,7 +15,7 @@ const projects: Project[] = [
     description: "It's my blog",
     url: "https://billy-blog.pockethost.io/",
     image: ["", "", ""],
-    github: "N/A",
+    github: "",
     goals: "Wanted to explore PocketBase",
     technologies: ["React", "PocketBase", "TypeScript"],
   },
