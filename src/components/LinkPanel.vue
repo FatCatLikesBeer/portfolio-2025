@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import GitHub from "./icons/GitHub.vue";
 import SiteIcon from "./icons/SiteIcon.vue";
-const props = defineProps<{
+defineProps<{
   github: string;
   url: string;
   size: number;

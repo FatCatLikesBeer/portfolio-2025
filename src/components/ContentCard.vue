@@ -11,6 +11,8 @@ const imageIndex = ref(1);
 
 const imageLocation = `/screenshots/${props.project.id}/`;
 const imageCatlog = Array.from({ length: 3 }, (_, i) => `${imageLocation}/${i + 1}.png`);
+imageCatlog.forEach((path) => { new Image().src = path });
+
 
 function handleLeft() {
   if (imageIndex.value <= 1) {
@@ -31,13 +33,15 @@ function handleRight() {
 </script>
 
 <template>
-  <div class="p-4 m-2 h-[98svh] flex flex-row" :id="project.id">
+  <div class="p-4 m-2 h-[92svh] flex flex-row scroll-m-12" :id="project.id">
     <ContentPanel :project="project" />
     <div class="flex-3/4">
       <div class="flex flex-col">
         <div v-for="(elem, i) in imageCatlog" class="mr-auto ml-auto">
           <div v-if="i + 1 === imageIndex">
-            <img :src="elem" class="max-h-[88svh]" />
+            <div v-if="project.id === 'sound-lab'" class="mt-4" />
+            <img :src="elem" class="max-h-[78svh] rounded-2xl" />
+            <div v-if="project.id === 'sound-lab'" class="mb-4" />
           </div>
         </div>
         <div class="flex flex-row items-center justify-center gap-8">

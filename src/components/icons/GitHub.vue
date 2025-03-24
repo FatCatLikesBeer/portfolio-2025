@@ -4,8 +4,6 @@ const props = defineProps<{ url: string; size: number }>();
 function handleClick() {
   window.open(props.url, "_blank");
 }
-
-console.log("url", props.url);
 </script>
 
 <template>

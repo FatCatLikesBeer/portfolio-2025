@@ -1,8 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{
-  location: number;
-}>();
-
+defineProps<{ location: number; }>();
 </script>
 
 <template>

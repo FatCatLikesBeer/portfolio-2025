@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{ size: number; callBack: () => {} }>();
+defineProps<{ size: number; callBack: () => void }>();
 
 </script>
 
