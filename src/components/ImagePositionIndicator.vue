@@ -1,12 +1,13 @@
 <script setup lang="ts">
-defineProps<{ location: number; }>();
+defineProps<{
+  location: number;
+  numberOfAssets: number;
+}>();
 </script>
 
 <template>
   <div class="flex flex-row justify-center">
-    <div :class="{ circle: true, selected: location === 1 }" />
-    <div :class="{ circle: true, selected: location === 2 }" />
-    <div :class="{ circle: true, selected: location === 3 }" />
+    <div v-for="position in numberOfAssets" :class="{ circle: true, selected: location === position }" />
   </div>
 </template>
 

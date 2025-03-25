@@ -1,15 +1,18 @@
 <script setup lang="ts">
 import type { Project } from "../data/projects.ts";
 defineProps<{ projects: Project[] }>();
+
 function idToLink(id: string): string {
   return `#${id}`;
 }
 </script>
 
 <template>
-  <header class="bg-gray-200 dark:bg-gray-700 flex flex-row justify-between">
-    <h1 class="font-bold">Billy's Portfolio</h1>
-    <ul class="flex flex-row">
+  <header class="bg-gray-200 dark:bg-gray-700 flex flex-row justify-between gap-16">
+    <div class="flex flex-row whitespace-nowrap">
+      <h1 class="font-bold text-lg"><a href="/">Billy's Portfolio</a></h1>
+    </div>
+    <ul id="scroll-bar" class="flex flex-row min-w-40 overflow-x-auto whitespace-nowrap">
       <li v-for="project in projects"><a :href="idToLink(project.id)">{{ project.name }}</a></li>
     </ul>
   </header>

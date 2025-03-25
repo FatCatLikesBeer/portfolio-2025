@@ -3,7 +3,7 @@
 
 <template>
   <footer class="flex flex-row justify-center">
-    <p>Created by Billy, Written in Vue 3</p>
+    <p>Created by Billy, Written in Vue 3 Composition API</p>
   </footer>
 </template>
 
