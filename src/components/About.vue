@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
+const showToast = ref(false);
+import Toast from "./Toast.vue";
+import Copy from "./icons/Copy.vue";
 const toggle = ref(false);
 const me = {
   name: "Billy Pamanian",
@@ -17,20 +20,38 @@ function revealer(bin: string): string {
 function toggleToggle() {
   toggle.value = !toggle.value;
 }
+async function copyToKeyboard() {
+  try {
+    await navigator.clipboard.writeText(revealer(me.email));
+    showToast.value = true;
+  } catch (err: unknown) {
+    console.error(err);
+  } finally {
+    setTimeout(() => {
+      showToast.value = false;
+    }, 500);
+  }
+}
 </script>
 
 <template>
-  <div id="about" class="flex flex-row bg-gray-200 dark:bg-gray-700 rounded-2xl gap-8">
+  <div id="about" class="flex flex-row bg-neutral-200 dark:bg-neutral-800 rounded-2xl gap-8">
     <div class="flex-1/2 flex flex-col justify-between">
       <div>
         <h1 class="font-bold text-lg">{{ me.name }}</h1>
-        <p class="text-xs text-gray-500 dark:text-gray-400">{{ me.location }}</p>
-        <p v-if="!toggle" @click="toggleToggle" class="text-xs text-gray-500 dark:text-gray-400">
-          Click to reveal email
-        </p>
-        <p v-else class="text-xs">{{ revealer(me.email) }}</p>
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">{{ me.location }}</p>
+        <div>
+          <p v-if="!toggle" @click="toggleToggle" class="text-xs text-neutral-500 dark:text-neutral-400">
+            Click to reveal email
+          </p>
+          <div v-else class="text-xs flex flex-row gap-2.5">
+            <p>{{ revealer(me.email) }} </p>
+            <Copy :size="12" :callBack="copyToKeyboard" class="cursor-pointer" />
+            <Toast :showToast="showToast" />
+          </div>
+        </div>
       </div>
-      <div class="mt-4">
+      <div>
         <p class="text-sm font-bold">Skills:</p>
         <p class="text-sm"><span class="font-bold"></span> {{ me.skills.join(", ") }}.</p>
       </div>

@@ -8,7 +8,7 @@ function idToLink(id: string): string {
 </script>
 
 <template>
-  <header class="bg-gray-200 dark:bg-gray-700 flex flex-row justify-between gap-16">
+  <header class="bg-neutral-200 dark:bg-neutral-800 flex flex-row justify-between gap-16">
     <div class="flex flex-row whitespace-nowrap">
       <h1 class="font-bold text-lg"><a href="/">Billy's Portfolio</a></h1>
     </div>
@@ -26,7 +26,7 @@ header {
   margin: 0 24px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  z-index: 9999;
+  z-index: 9990;
   padding: 8px 16px;
 }
 
