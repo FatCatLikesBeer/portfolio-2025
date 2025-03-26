@@ -20,9 +20,9 @@ function revealer(bin: string): string {
 function toggleToggle() {
   toggle.value = !toggle.value;
 }
-async function copyToKeyboard() {
+function copyToKeyboard() {
   try {
-    await navigator.clipboard.writeText(revealer(me.email));
+    navigator.clipboard.writeText(revealer(me.email));
     showToast.value = true;
   } catch (err: unknown) {
     console.error(err);
