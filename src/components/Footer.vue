@@ -2,14 +2,11 @@
 </script>
 
 <template>
-  <footer class="flex flex-row justify-center">
-    <p>Created by Billy, Written in Vue 3 Composition API</p>
+  <footer class="flex flex-col justify-center text-gray-400 text-sm m-12 mt-18">
+    <p class="m-auto">Created by Billy</p>
+    <p class="m-auto">Written in <a href="https://vuejs.org/" target="_blank">Vue 3 </a>Composition API</p>
+    <p class="m-auto">All Icons by <a href="https://icons.getbootstrap.com/" target="_blank">Bootstrap</a></p>
   </footer>
 </template>
 
-<style>
-footer {
-  margin: 24px;
-  margin-top: 30px;
-}
-</style>
+<style></style>

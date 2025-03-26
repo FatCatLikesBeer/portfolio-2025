@@ -61,7 +61,7 @@ const projects: Project[] = [
   },
   {
     id: "bored-programmer",
-    name: "Bored Programmer",
+    name: "Bored Programmer API",
     description: "Like the Bored API (RIP) but for programmers",
     url: "https://bored-programmer-api.fly.dev/",
     github: "https://github.com/FatCatLikesBeer/bored_programmer",
@@ -90,10 +90,10 @@ const projects: Project[] = [
     url: "https://coursera.org/verify/professional-cert/GYGU9E5MSRQU",
     github: "",
     goals: "This is my second programming course. I wanted to learn to build things using a popular framework.",
-    tech: ["React", "JavaScript", "CSS", "Git"],
+    tech: ["React", "JavaScript", "CSS", "Git", "Figma"],
     numberOfAssets: 10,
     type: "course",
-    imageFormat: "png",
+    imageFormat: "jpg",
   },
   {
     id: "google-python",

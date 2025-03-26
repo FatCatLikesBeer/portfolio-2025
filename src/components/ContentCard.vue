@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import LeftArrow from "./icons/LeftArrow.vue";
 import RightArrow from "./icons/RightArrow.vue";
 import ImagePositionIndicator from "./ImagePositionIndicator.vue";
@@ -16,7 +16,6 @@ const imageCatlog = Array.from({ length: props.project.numberOfAssets }, (_, i) 
     linkURL: "course" === props.project.type ? `${imageLocation}/${i + 1}.pdf` : `${imageLocation}/${i + 1}.${props.project.imageFormat}`,
   }
 });
-imageCatlog.forEach((path) => { new Image().src = path });
 
 function handleLeft() {
   if (imageIndex.value <= 1) {
@@ -33,6 +32,10 @@ function handleRight() {
     imageIndex.value = imageIndex.value + 1;
   }
 }
+
+onMounted(() => {
+  imageCatlog.forEach((elem) => { new Image().src = elem.imageURL });
+});
 
 </script>
 
