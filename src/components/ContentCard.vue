@@ -34,7 +34,11 @@ function handleRight() {
 }
 
 onMounted(() => {
-  imageCatlog.forEach((elem) => { new Image().src = elem.imageURL });
+  imageCatlog.forEach((elem, index) => {
+    setTimeout(() => {
+      new Image().src = elem.imageURL;
+    }, index * 2000);
+  });
 });
 
 </script>
@@ -46,9 +50,8 @@ onMounted(() => {
       <div class="flex flex-col">
         <div v-for="(elem, i) in imageCatlog" class="mr-auto ml-auto">
           <div v-if="i + 1 === imageIndex">
-            <div v-if="project.id === 'sound-lab'" class="mt-4" />
-            <a :href="elem.linkURL" target="_blank"><img :src="elem.imageURL" class="max-h-[78svh] rounded-2xl" /></a>
-            <div v-if="project.id === 'sound-lab' || project.type === 'course'" class="mb-4" />
+            <a :href="elem.linkURL" target="_blank"><img :src="elem.imageURL"
+                class="max-h-[78svh] rounded-2xl my-4 drop-shadow-xl" /></a>
           </div>
         </div>
         <div class="flex flex-row items-center justify-center gap-8">

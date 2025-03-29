@@ -9,7 +9,7 @@ const projects: Project[] = [
     tech: ["React", "TypeScript", "Hono", "S3", "Cloudflare R2", "SQLite", "Turso", "SSR", "Open Graph", "Twitter Cards"],
     numberOfAssets: 3,
     type: "project",
-    imageFormat: "png",
+    imageFormat: "jpg",
   },
   {
     id: "billy-blog",
@@ -21,7 +21,7 @@ const projects: Project[] = [
     tech: ["React", "PocketBase", "TypeScript"],
     numberOfAssets: 3,
     type: "project",
-    imageFormat: "png",
+    imageFormat: "jpg",
   },
   {
     id: "sound-lab",
@@ -33,7 +33,7 @@ const projects: Project[] = [
     tech: ["Web Audio API", "Device Orientation API", "React", "TypeScript"],
     numberOfAssets: 3,
     type: "project",
-    imageFormat: "png",
+    imageFormat: "jpg",
   },
   {
     id: "blue-bubbles",
@@ -45,7 +45,7 @@ const projects: Project[] = [
     tech: ["DOM manipulation", "Socket.io", "WebSockets", "No-React", "MongoDB", "Express", "TTD", "Jest", "SuperTest"],
     numberOfAssets: 3,
     type: "project",
-    imageFormat: "png",
+    imageFormat: "jpg",
   },
   {
     id: "letter-finder",
@@ -57,7 +57,7 @@ const projects: Project[] = [
     tech: ["React", "MongoDB"],
     numberOfAssets: 3,
     type: "project",
-    imageFormat: "png",
+    imageFormat: "jpg",
   },
   {
     id: "bored-programmer",
@@ -69,7 +69,7 @@ const projects: Project[] = [
     tech: ["NodeJS", "MongoDB", "Express", "EJS"],
     numberOfAssets: 3,
     type: "project",
-    imageFormat: "png",
+    imageFormat: "jpg",
   },
   {
     id: "passwordhawk",
@@ -81,7 +81,7 @@ const projects: Project[] = [
     tech: ["React", "TypeScript"],
     numberOfAssets: 3,
     type: "project",
-    imageFormat: "png",
+    imageFormat: "jpg",
   },
   {
     id: "meta-front",
