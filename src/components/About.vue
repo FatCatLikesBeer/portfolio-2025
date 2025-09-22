@@ -9,10 +9,10 @@ const me = {
   email: "aXRpc2JpbGx5QGdtYWlsLmNvbQ==",
   location: "Los Angeles",
   about: [
-    "Twelve years in the cannabis industry. Built and retrofitted buildings for commercial compliance, now building and maintaining automated hydroponic systems. Did a bit of low voltage installation in between.",
-    "Self taught Python, learned shell and the terminal along the way. During peak pandemic, took a Coursera course on IT Automation with Python. Next was another Coursera course on React. Last course was The Odin Project, most of their assignments are featured on here.",
+    "12 years in cannabis grow operations, last 5 of those years I've worn many technical hats, from network and automations adminsitrator, sysops, and now application and hardward development. Specifically I poked holes in walls to install network infrastructure, setup and configured our environmental automations for others to use, created remote access to our automations interfaces without public exposure, and am currently working on an environmental monitoring system which includes microcontroller programming.",
+    "This portfolio showcases certificates, work from The Odin Project bootcamp, and the few hobboy projects that I've built to compltion.",
   ],
-  skills: ["Linux", "Unix", "Ubuntu", "Python/MicroPython", "Shell Scripting", "JavaScript", "TypeScript", "Git", "Docker", "Hono/Express", "NodeJS/Deno", "Expo/React Native", "React", "Vue", "SQL", "MongoDB", "VIM btw"],
+  skills: ["TypeScript", "JavaScript", "Linux", "Unix", "Ubuntu", "Python/MicroPython", "Git", "Docker/Docker-Compose", "Hono/Express", "NodeJS/Deno", "Expo/React Native", "React", "Vue", "SQLite", "MongoDB", "C", "NVIM"],
 }
 function revealer(bin: string): string {
   return atob(bin);
