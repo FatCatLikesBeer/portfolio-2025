@@ -9,8 +9,8 @@ const me = {
   email: "aXRpc2JpbGx5QGdtYWlsLmNvbQ==",
   location: "Los Angeles",
   about: [
-    "12 years in cannabis grow operations, last 5 of those years I've worn many technical hats, from network and automations adminsitrator, sysops, and now application and hardward development. Specifically I poked holes in walls to install network infrastructure, setup and configured our environmental automations for others to use, created remote access to our automations interfaces without public exposure, and am currently working on an environmental monitoring system which includes microcontroller programming.",
-    "This portfolio showcases certificates, work from The Odin Project bootcamp, and the few hobboy projects that I've built to compltion.",
+    "12 years in cannabis grow operations, last 5 of those years I've worn many technical hats, from network and automations administrator, sysops, and now application and hardware development. Specifically, I poked holes in walls to install network infrastructure, setup and configured our environment automations for others to use, created remote access to our automation interfaces without public exposure, and am currently working on an environmental monitoring system which includes microcontroller programming.",
+    "This portfolio showcases certificates, work from The Odin Project bootcamp, and the few hobby projects that I've built to completion.",
   ],
   skills: ["TypeScript", "JavaScript", "Linux", "Unix", "Ubuntu", "Python/MicroPython", "C", "Git", "Docker/Docker-Compose", "Hono/Express", "NodeJS/Deno", "Expo/React Native", "React", "Vue", "SQLite", "MongoDB", "NVIM"],
 }
