@@ -12,7 +12,7 @@ const me = {
     "12 years in cannabis grow operations, last 5 of those years I've worn many technical hats, from network and automations adminsitrator, sysops, and now application and hardward development. Specifically I poked holes in walls to install network infrastructure, setup and configured our environmental automations for others to use, created remote access to our automations interfaces without public exposure, and am currently working on an environmental monitoring system which includes microcontroller programming.",
     "This portfolio showcases certificates, work from The Odin Project bootcamp, and the few hobboy projects that I've built to compltion.",
   ],
-  skills: ["TypeScript", "JavaScript", "Linux", "Unix", "Ubuntu", "Python/MicroPython", "Git", "Docker/Docker-Compose", "Hono/Express", "NodeJS/Deno", "Expo/React Native", "React", "Vue", "SQLite", "MongoDB", "C", "NVIM"],
+  skills: ["TypeScript", "JavaScript", "Linux", "Unix", "Ubuntu", "Python/MicroPython", "C", "Git", "Docker/Docker-Compose", "Hono/Express", "NodeJS/Deno", "Expo/React Native", "React", "Vue", "SQLite", "MongoDB", "NVIM"],
 }
 function revealer(bin: string): string {
   return atob(bin);
